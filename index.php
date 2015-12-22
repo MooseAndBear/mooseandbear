@@ -6,7 +6,8 @@
 ?></head>
 
 <body>
-
+    <a class="home"></a>
+    
     <div class="landing--view">
       <a class="landing--logo"></a>
       <a class="down--arrow"></a>
@@ -45,6 +46,6 @@
         include "php/section--work.php";
         include "php/section--info.php";
         include "php/section--contact.php";
-        
+
 ?></body>
 </html>

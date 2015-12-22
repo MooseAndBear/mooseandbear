@@ -1,6 +1,5 @@
 <div class="wrapper">
       <section id="section_about">
-        <a class="home"></a>
 
         <div class="content-container">
 
@@ -58,7 +57,7 @@
           <div class="para-wrapper">
             <p>Moose & Bear is the product of two friends with a love for technology. For years we have worked together on numerous projects, with the constant drive to develop solutions for the ever-expanding digital market.</p> 
             <br />
-            <p>Both with ackgrounds in web development, collaboration was inevitable. <a href="sam.php">Sam</a> specialises in graphics design, identity and front-end web development. He currently works at Parllax Agency ltd as a front-end developer.<a href="oli.php">Oli</a> does marketting and social strategy, and is a back-end developer. He currecntly works at Fyber as a lead developer.</p>
+            <p>Both with backgrounds in web development, collaboration was inevitable. <a href="sam.php">Sam</a> specialises in graphics design, identity and front-end web development. He currently works at Parllax Agency ltd as a front-end developer. <a href="oli.php">Oli</a> does marketting and social strategy, and is a back-end developer. He currecntly works at Fyber as a lead developer.</p>
             <br />
             <a class="-js-slide"><h3>Go Back</h3></a>
           </div>

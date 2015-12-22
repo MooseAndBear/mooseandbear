@@ -1,6 +1,5 @@
 <div class="wrapper">
       <section id="section_contact">
-        <a class="home"></a>
 
         <div class="content-container">
 
