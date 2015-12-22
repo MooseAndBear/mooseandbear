@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,100,300,500");
 @import url("../app/assets/reset.css");
 
+$color--main: #484271;
+
 * {
   font-family: 'Roboto', sans-serif !important;
 }
@@ -48,12 +50,13 @@
   z-index: 100;
   border-radius: 50%;
   cursor: pointer;
+  background-image: url("https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/50418/2470618/Q2ADoGPaS3GS4Lc/house--dark.png");
 }
 
 .landing--view {
   height: 100vh;
   background-image: url("https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/50418/2470618/u9Ujs1dOjFjWjse/background-landing.jpg");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-attachment: fixed;
   overflow: hidden;
@@ -127,6 +130,7 @@
   transform: translate(-50%, -50%);
   animation: hint 5s infinite cubic-bezier(.53, -.1, .35, 1.65);
   cursor: pointer;
+  background-image: url("https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/50418/2470618/7Ojw8moVrsgjwcO/arrow--down--dark.png");
 }
 
 section {
@@ -136,10 +140,10 @@ section {
   min-height: 530px;
   height: 100vh;
   position: relative;
-  color: #484271;
+  color: $color--main;
   
-  &:nth-child(odd) {
-    background-color: #484271;
+  &:nth-child(3n+3) {
+    background-color: $color--main;
     color: white;
     
     .section--arrow {
@@ -158,9 +162,9 @@ section {
       }
     }
   }
-  &:nth-child(even) {
+  &:nth-child(3n-3) {
     background-color: white;
-    color: #484271;
+    color: $color--main;
     
     .section--arrow {
       background-image: url("https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/50418/2470618/7Ojw8moVrsgjwcO/arrow--down--dark.png");
@@ -193,6 +197,11 @@ section {
     width: 325px;
   }
   
+  .para-wrapper {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  
   h1,
   h2,
   h3,
@@ -210,13 +219,18 @@ section {
   h2 {
     font-weight: 100;
   }
+  
+  p {
+    font-size: 1rem;
+    font-weight: 100;
+  }
 }
 
 .naviagtion--buttons_button {
   display: inline-block;
   width: 150px;
   height: 150px;
-  background-color: #484271;
+  background-color: $color--main;
   margin: 20px;
   border-radius: 50%;
   transition: padding .3s ease-in-out;
@@ -311,10 +325,171 @@ section {
 }
 
 a {
-  color: #484271;
+  color: $color--main;
   cursor: pointer;
   
   &:hover {
-    color: #484271;
+    color: $color--main;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.--read-more {
+  position: absolute;
+  min-width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: $color--main;
+  color: white;
+  z-index: 2;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all .5s ease-in-out;
+  
+  a {
+    color: #f6e7da;
+    cursor: pointer;
+  }
+}
+
+.--move-in {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.about--more {
+  background:
+    linear-gradient(
+      rgba(28, 26, 44, 0.75), 
+      rgba(28, 26, 44, 0.75)
+    ),
+    url("http://upload.wikimedia.org/wikipedia/commons/5/5c/Horsforth_station.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.work--more {
+  background:
+    linear-gradient(
+      rgba(28, 26, 44, 0.75), 
+      rgba(28, 26, 44, 0.75)
+    ),
+    url("http://fi.ge.pgstatic.net/articles/processed/1421998364.381ab44af6c24fcfa1e118c28c377145.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.info--more {
+  background:
+    linear-gradient(
+      rgba(28, 26, 44, 0.75), 
+      rgba(28, 26, 44, 0.75)
+    ),
+    url("http://cdn1.vox-cdn.com/thumbor/W4g1vncafhxwCFIh8ZXyQ7I8Tyg=/cdn0.vox-cdn.com/uploads/chorus_asset/file/3753990/shia-_just_do_it.0.gif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contact--more {
+  background:
+    linear-gradient(
+      rgba(28, 26, 44, 0.75), 
+      rgba(28, 26, 44, 0.75)
+    ),
+    url("http://www.nmhomeservices.co.uk/assets/images/bigimages/contact_us.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-stats {
+  width: 100%;
+  margin: 20px auto 30px;
+  // display: block; //Fallback for none-flex browsers
+  // display: flex;
+  display: inline-block;
+  justify-content: space-around;
+  
+  @media (max-width: 900px) {
+    display: none;
+  }
+  
+  .stat__item {
+    position: relative;
+    text-align: center;
+    margin-top: calc(50px - 1em);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    font-size: 2em; 
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    margin: 30px;
+    
+    @media (max-width: 600px) {
+      margin: 50px;
+      margin-bottom: 100px;
+    }
+    
+    .stat-number {
+      height: 100px;
+      line-height: 105px;
+      color: black;
+      transition: all .5s ease-in-out;
+      cursor: pointer;
+      
+      .stat-desc {
+        position: relative;
+        font-size: 11px;
+        line-height: 10px;
+        width: 115px;
+        color: $color--main;
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+      }
+    }
+    
+    &:hover {
+      
+      &:before {
+        background: $color--main;
+        top: 0;
+        box-shadow: none;
+      }
+      
+      .stat-number {
+        color: white;
+        line-height: 100px;
+        
+        .stat-desc {
+          color: $color--main;
+        }
+      }
+    }
+
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      transform: rotate(45deg);
+      transform-origin: 50% 50%;
+      cursor: pointer;
+      z-index: -1;
+      box-shadow: 2px 2px 20px 3px rgba(72,66,113,0.5);
+      transition: all .5s ease-in-out;
+    }
   }
 }

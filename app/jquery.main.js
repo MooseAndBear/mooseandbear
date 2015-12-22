@@ -151,4 +151,9 @@ $(function() {
     );
   }
 
+  $(".-js-slide").click(function(event) {
+    event.preventDefault();
+    $(this).closest(".wrapper").find(".--read-more").toggleClass("--move-in");
+  });
+
 });
