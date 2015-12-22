@@ -40,9 +40,11 @@
       <a class="nav-to-about section--arrow"></a>
 
     </section><?php
+
         include "php/section--about.php";
         include "php/section--work.php";
         include "php/section--info.php";
         include "php/section--contact.php";
+        
 ?></body>
 </html>
