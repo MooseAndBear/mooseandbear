@@ -38,7 +38,7 @@
             </div>
 
         </div>
-        <a class="nav-to-about section--arrow"></a>
+        <a href="#section_about" class="section--arrow js-section-scroll"></a>
 
     </section><?php
 

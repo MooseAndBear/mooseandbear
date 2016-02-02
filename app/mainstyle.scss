@@ -45,12 +45,12 @@ $color--main: #484271;
   height: 32px;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   top: 5px;
   left: 5px;
   z-index: 100;
-  border-radius: 50%;
   cursor: pointer;
-  background-image: url("https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/50418/2470618/Q2ADoGPaS3GS4Lc/house--dark.png");
+  background-image: url("home-icon-purple.png");
 }
 
 .landing--view {
@@ -107,14 +107,13 @@ $color--main: #484271;
 .down--arrow {
   width: 48px;
   height: 48px;
-  background-image: url("http://icons.iconarchive.com/icons/iconsmind/outline/48/Arrow-Down-icon.png");
+  background-image: url("arrow-down-white.png");
   background-size: cover;
   background-position: center;
   position: absolute;
   left: 50%;
   bottom: 0;
   transform: translate(-50%, -50%);
-  -webkit-filter: invert(100%);
   cursor: pointer;
   transition: opacity .3s ease-in-out;
   animation: hint 5s infinite cubic-bezier(.53, -.1, .35, 1.65);
@@ -130,7 +129,7 @@ $color--main: #484271;
   transform: translate(-50%, -50%);
   animation: hint 5s infinite cubic-bezier(.53, -.1, .35, 1.65);
   cursor: pointer;
-  background-image: url("https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/50418/2470618/7Ojw8moVrsgjwcO/arrow--down--dark.png");
+  background-image: url("arrow-down-purple.png");
 }
 
 section {
@@ -147,11 +146,11 @@ section {
     color: white;
     
     .section--arrow {
-      background-image: url("https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/50418/2470618/vq76HYQqnFVVYaE/arrow--down--light.png");
+      background-image: url("arrow-down-white.png");
     }
     
     .home {
-      background-image: url("https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/50418/2470618/MgbPxn6wRvfV3Ky/house--light.png");
+      background-image: url("home-icon-white.png");
     }
     
     a {
@@ -167,11 +166,11 @@ section {
     color: $color--main;
     
     .section--arrow {
-      background-image: url("https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/50418/2470618/7Ojw8moVrsgjwcO/arrow--down--dark.png");
+      background-image: url("arrow-down-purple.png");
     }
     
     .home {
-      background-image: url("https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/50418/2470618/Q2ADoGPaS3GS4Lc/house--dark.png");
+      background-image: url("home-icon-purple.png");
     }
   }
 }
