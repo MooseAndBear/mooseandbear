@@ -50,7 +50,7 @@ $color--main: #484271;
   left: 5px;
   z-index: 100;
   cursor: pointer;
-  background-image: url("home-icon-purple.png");
+  background-image: url("home-icon.png");
 }
 
 .landing--view {
@@ -149,10 +149,6 @@ section {
       background-image: url("arrow-down-white.png");
     }
     
-    .home {
-      background-image: url("home-icon-white.png");
-    }
-    
     a {
       color: white;
       
@@ -161,16 +157,13 @@ section {
       }
     }
   }
+
   &:nth-child(3n-3) {
     background-color: white;
     color: $color--main;
     
     .section--arrow {
       background-image: url("arrow-down-purple.png");
-    }
-    
-    .home {
-      background-image: url("home-icon-purple.png");
     }
   }
 }
@@ -245,6 +238,7 @@ section {
     width: 100px;
     height: 100px;
     background-size: 64px;
+    display: inline-block !important;
   }
 }
 

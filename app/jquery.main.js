@@ -1,7 +1,7 @@
 $(function() {
 
   var $window = $(window),
-    $logo = $('.landing--logo');
+  $logo = $('.landing--logo');
   var $logoOffset = $logo.offset().top;
 
   $window.scroll(function() {
@@ -66,8 +66,8 @@ $(function() {
     );
   }
 
-  $(".-js-slide").click(function(event) {
-    event.preventDefault();
+  $(".-js-slide").click(function(e) {
+    e.preventDefault();
     $(this).closest(".wrapper").find(".--read-more").toggleClass("--move-in");
   });
 
