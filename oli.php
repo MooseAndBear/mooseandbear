@@ -19,7 +19,7 @@
 	    <br />
 	    <p>Another huge part of my life is music. playing guitar since I was 6 and drums since I was around 10, as well as a few other instruments, I have developed not only a huge passion in computer and web developing, but also in the production and writing of music. Playing in several bands since I was 12, the most recent, and the longest standing of 3 years, Absent Parachute, playing in huge venues around Leeds, including The Cockpit, O<sub>2</sub> Academy Leeds, The Wardrobe, and plenty more.</p>
 		<br />
-		<a href=".">Go Back</a>
+		<a href=".#section_about">Go Back</a>
 	</div>
 </section>
 

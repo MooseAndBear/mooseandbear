@@ -19,7 +19,7 @@
 	    <br />
 	    <p>As well as create websites and listening to questionable music, I also do graphics upon-request, as well as in my own time. I have done numerous posters for events as well as design professional flyers, logos, web pages, and even created some digital artwork using Photoshop. Feel free to enquire about any graphics work as I love to do it and would be more than happy to help you out!</p>
     	<br />
-		<a href=".">Go Back</a>
+		<a href=".#section_about">Go Back</a>
     </div>
 </section>
 
