@@ -6,11 +6,11 @@
 ?></head>
 
 <body>
-    <a class="home"></a>
+    <a href="#section_nav" class="home js-section-scroll"></a>
 
     <div class="landing--view">
-        <a class="landing--logo"></a>
-        <a class="down--arrow"></a>
+        <a href="#section_nav" class="landing--logo js-section-scroll"></a>
+        <a href="#section_nav" class="down--arrow js-section-scroll"></a>
     </div>
 
     <section id="section_nav">
@@ -23,16 +23,16 @@
             <div class="--spacing_100"></div>
 
             <div class="naviagtion--buttons_container">
-                <a class="naviagtion--buttons_button --about --invert">
+                <a href="#section_about" class="naviagtion--buttons_button --about --invert js-section-scroll">
                     <div class="navigation--buttons_desc">About Us</div>
                 </a>
-                <a class="naviagtion--buttons_button --work --invert">
+                <a href="#section_work" class="naviagtion--buttons_button --work --invert js-section-scroll">
                     <div class="navigation--buttons_desc">Our Work</div>
                 </a>
-                <a class="naviagtion--buttons_button --info --invert">
+                <a href="#section_info" class="naviagtion--buttons_button --info --invert js-section-scroll">
                     <div class="navigation--buttons_desc">More Info</div>
                 </a>
-                <a class="naviagtion--buttons_button --contact --invert">
+                <a href="#section_contact" class="naviagtion--buttons_button --contact --invert js-section-scroll">
                     <div class="navigation--buttons_desc">Contact</div>
                 </a>
             </div>

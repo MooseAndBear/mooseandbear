@@ -9,7 +9,7 @@
             <a class="-js-slide"><h3>Read More...</h3></a>
 
         </div>
-        <a class="back-to-top">Back To Top</a>
+        <a href="#section_nav" class="back-to-top js-section-scroll">Back To Top</a>
 
     </section>
     <section class="--read-more contact--more">

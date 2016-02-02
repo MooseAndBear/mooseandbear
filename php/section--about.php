@@ -47,7 +47,7 @@
             <a class="-js-slide"><h3>Read More...</h3></a>
 
         </div>
-        <a class="about-to-work section--arrow"></a>
+        <a href="#section_work" class="js-section-scroll section--arrow"></a>
 
     </section>
     <section class="--read-more about--more">

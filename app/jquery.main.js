@@ -41,99 +41,14 @@ $(function() {
     });
   });
 
-  $logo.on('click touchend', function(e) {
+  $('.js-section-scroll').on('click touchend', function(e) {
     e.preventDefault();
 
-    $('html, body').animate({
-      scrollTop: $('#section_nav').offset().top
-    }, 1000);
-  });
-
-  $('.home').on('click touchend', function(e) {
-    e.preventDefault();
+    var section = $(this).attr('href');
+    var $section = $(section);
 
     $('html, body').animate({
-      scrollTop: $('#section_nav').offset().top
-    }, 1000);
-  });
-
-  $('.down--arrow').on('click touchend', function(e) {
-    e.preventDefault();
-
-    $('html, body').animate({
-      scrollTop: $('#section_nav').offset().top
-    }, 1000);
-  });
-
-  $('.nav-to-about').on('click touchend', function(e) {
-    e.preventDefault();
-
-    $('html, body').animate({
-      scrollTop: $('#section_about').offset().top
-    }, 1000);
-  });
-
-  $('.about-to-work').on('click touchend', function(e) {
-    e.preventDefault();
-
-    $('html, body').animate({
-      scrollTop: $('#section_work').offset().top
-    }, 1000);
-  });
-
-  $('.work-to-info').on('click touchend', function(e) {
-    e.preventDefault();
-
-    $('html, body').animate({
-      scrollTop: $('#section_info').offset().top
-    }, 1000);
-  });
-
-  $('.info-to-contact').on('click touchend', function(e) {
-    e.preventDefault();
-
-    $('html, body').animate({
-      scrollTop: $('#section_contact').offset().top
-    }, 1000);
-  });
-
-  $('.--about').on('click touchend', function(e) {
-    e.preventDefault();
-
-    $('html, body').animate({
-      scrollTop: $('#section_about').offset().top
-    }, 1000);
-  });
-
-  $('.--work').on('click touchend', function(e) {
-    e.preventDefault();
-
-    $('html, body').animate({
-      scrollTop: $('#section_work').offset().top
-    }, 1000);
-  });
-
-  $('.--info').on('click touchend', function(e) {
-    e.preventDefault();
-
-    $('html, body').animate({
-      scrollTop: $('#section_info').offset().top
-    }, 1000);
-  });
-
-  $('.--contact').on('click touchend', function(e) {
-    e.preventDefault();
-
-    $('html, body').animate({
-      scrollTop: $('#section_contact').offset().top
-    }, 1000);
-  });
-
-  $('.back-to-top').on('click touchend', function(e) {
-    e.preventDefault();
-
-    $('html, body').animate({
-      scrollTop: $('#section_nav').offset().top
+      scrollTop: $section.offset().top + 'px'
     }, 1000);
   });
 

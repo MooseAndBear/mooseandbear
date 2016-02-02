@@ -9,7 +9,7 @@
             <a class="-js-slide"><h3>Read More...</h3></a>
 
         </div>
-        <a class="info-to-contact section--arrow"></a>
+        <a href="#section_contact" class="js-section-scroll section--arrow"></a>
 
     </section>
     <section class="--read-more info--more">
